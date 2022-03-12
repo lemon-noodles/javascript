@@ -1,1 +1,2 @@
-# javascript
+#### Resources
+- https://javascript.info
