@@ -32,6 +32,13 @@
     - Call inside functional component only
 - Design Patterns
     - MVC
+- Why hooks over Class based components
+    - no more this keyword
+    - better readability aka cleaner code, minifies well
+    - reusability - decoupling of logic from UI, sharing stateful logic between components
+- Higher Order Components -
+    - higher-order component is a function that takes a component and returns a new component
+    - a component transforms props into UI, a higher-order component transforms a component into another component
 
 ---
 #### JS
