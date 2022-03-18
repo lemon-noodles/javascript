@@ -47,7 +47,14 @@
     - this is a feature of JS where you can access a function or variable without error even before initializing or defining it.
     - if we use a variable, an arrow function, or an anonymously named function it will be undefined before init
     - if we use a function it works just fine before init
-
+- Callback
+    - calling a function within a function
+    - can be used to do something after a fn is executed - synchronous behavior
+- Promises, Promise.all, Async Await
+    - Promises is the newer way to get out of callback hell but still achieve synchronous behavior
+    - Essentially, we return a promise to which we chain callbacks
+    - Promise.all can be used to run multiple promises in order, by passing an array of promises
+    - Async await is a much cleaner way to handle the response of a promise
 
 ---
 #### JS Code Snippets
@@ -117,3 +124,5 @@ const memoizedClumzyProduct = myMemoize(clumsyProduct)
 #### Resources
 - https://www.youtube.com/watch?v=vxggZffOqek
 - https://www.youtube.com/watch?v=Fnlnw8uY6jo
+- https://www.youtube.com/watch?v=ZYb_ZU8LNxs - async await
+- https://www.youtube.com/watch?v=PoRJizFvM7s
