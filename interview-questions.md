@@ -55,7 +55,15 @@
     - Essentially, we return a promise to which we chain callbacks
     - Promise.all can be used to run multiple promises in order, by passing an array of promises
     - Async await is a much cleaner way to handle the response of a promise
-
+- Async and defer
+    - boolean attributes used with script tag to load js faster
+    - when we load a webpage, 2 things happen
+        - HTML is being parsed, and assets are being downloaded
+        - img tag does not block html parsing, but script tag does until js downloading and execution is complete
+    - async attribute does not block html parsing until download of js is complete, but blocks during execution phase
+        - async is useful when loading independent js
+    - defer attribute does not block html parsing, js is execute only after html is completely parsed
+        - defer is useful when you need to load large dependent js files in a particular order
 ---
 #### JS Code Snippets
 
