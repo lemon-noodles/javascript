@@ -75,6 +75,13 @@
     - call and apply invoke a function call
     - call takes args as comma seperated values
     - apply takes args as an array
+- Closures
+    - a function, and it's lexical scope bundled to together is a closure
+    - used in Module Design Pattern
+    - Currying
+    - Functions like once
+    - memoize, setTimeout, Iterators
+    - maintaining state in async world
 ---
 #### JS Code Snippets
 
@@ -145,3 +152,4 @@ const memoizedClumzyProduct = myMemoize(clumsyProduct)
 - https://www.youtube.com/watch?v=Fnlnw8uY6jo
 - https://www.youtube.com/watch?v=ZYb_ZU8LNxs - async await
 - https://www.youtube.com/watch?v=PoRJizFvM7s
+- https://www.youtube.com/watch?v=qikxEIxsXco - closure
