@@ -64,6 +64,17 @@
         - async is useful when loading independent js
     - defer attribute does not block html parsing, js is execute only after html is completely parsed
         - defer is useful when you need to load large dependent js files in a particular order
+- Function Borrowing
+    - is the concept of borrowing a function from other object and use it with an entirely new object by binding the new object to this context
+    - acheived using call and apply
+- Bind
+    - bind method returns a function after binding the reference
+    - it does not invoke a function call like call and apply
+- Call, Apply
+    - call and apply also binds an object to the this context, the first param is passed by reference
+    - call and apply invoke a function call
+    - call takes args as comma seperated values
+    - apply takes args as an array
 ---
 #### JS Code Snippets
 
