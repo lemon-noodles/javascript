@@ -42,6 +42,13 @@
 
 ---
 #### JS
+- JS is a synchronous, single-threaded language, everything in JS happens within a execution context.
+    - When we execute a JS program, a new global execution context is created
+    - Execution Context has 2 phases - 
+        - Memory creation in Variable Environment - all variables are declared and initialized to undefined, function definitions are assigned too
+        - Code execution aka Thread of execution - execution spawns new execution contexts when it encounters a function invocation
+    - JS continuosly is pushing and popping execution contexts
+    - Call stack maintains the order of execution of execution contexts
 - JS does memory allocation before executing the code, all variables are given undefined, however functions are declared
 - Hoisting
     - this is a feature of JS where you can access a function or variable without error even before initializing or defining it.
