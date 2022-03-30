@@ -47,9 +47,36 @@
     - Execution Context has 2 phases - 
         - Memory creation in Variable Environment - all variables are declared and initialized to undefined, function definitions are assigned too
         - Code execution aka Thread of execution - execution spawns new execution contexts when it encounters a function invocation
+        - Every execution context has it's own memory
     - JS continuosly is pushing and popping execution contexts
     - Call stack maintains the order of execution of execution contexts
 - JS does memory allocation before executing the code, all variables are given undefined, however functions are declared
+- Losely/Weakly typed language
+    - a = 10
+    - a = "Naveen"
+- Lexical Environment
+    - lexical means heirarchy or sequence
+    - LE is created when an execution context is created
+    - LE = local memory + reference to LE of the parent
+- Scope 
+    - where you can access a specific var or function
+    - what is the scope of a var defined within a function, only within the func
+    - is a var within the scope of a function that it can access
+- Scope Chain
+    - is the process of trying to find a var by traversing through the lexical environment heirarchy
+- Window object
+    - global space is nothing but any code not within a function
+    - a global object created along with global execution context
+    - 'this' is created when an execution context is created
+    - 'this' global object in browser is called window
+    - global object is created even when an empty js file is executed
+- Undefined
+    - when a variable is declared and not initialized, memory is allocated, undefined is assigned to the var
+    - undefined takes up it's own memory
+    - never assign a variable undefined explictely
+- Not defined
+    - when a variable is not at all declared then it is said to be not defined
+    - a ReferenceError is thrown
 - Hoisting
     - this is a feature of JS where you can access a function or variable without error even before initializing or defining it.
     - if we use a variable, an arrow function, or an anonymously named function it will be undefined before init
@@ -89,6 +116,28 @@
     - Functions like once
     - memoize, setTimeout, Iterators
     - maintaining state in async world
+- var
+    - during creation of EC, variable is assigned to global object
+    - var declarations are globally scoped or function/locally scoped.
+- temporal dead zone
+    - the time between when a variable was hoisted and it was assigned a value
+    - accessing a variable in temporal dead zone gives ReferenceError
+- let
+    - also block scoped
+    - during creation of EC, variable is assigned to another object called script
+    - hoisted in temporal dead zone
+    - they have a seperate space and are not stored in the global object
+    - window.let_var will give undefined
+    - we cannot redeclare a let variable, it throws a syntax error
+- const
+    - also block scoped
+    - assign the variable only once during initialization
+    - during creation of EC, variable is assigned to another object called script
+    - hoisted in temporal dead zone
+    - they have a seperate space and are not stored in the global object
+    - window.let_var will give undefined
+    - we cannot redeclare a const variable, it throws a syntax error
+    - object properties can be updated
 ---
 #### JS Code Snippets
 
