@@ -120,6 +120,13 @@
   - Functions like once
   - memoize, setTimeout, Iterators
   - maintaining state in async world
+  - data hiding and encapsulation
+- Disadvantages of closure
+  - memory consumption is more, because variables are not garbage collected
+  - chances of memory leak
+- Garbage Collector
+  - program that frees up memory
+  - smart garbage collection happens when closures are dealt, only variables that aren't used are garbage collected
 - var
   - during creation of EC, variable is assigned to global object
   - var declarations are globally scoped or function/locally scoped.
@@ -161,6 +168,18 @@
     - the latest ones shadow the global/script level declaration
   - illegal shadowing
     - trying to declare a let as var in block scope is illegal
+- higher order functions
+
+  - memoize, once
+
+- Function Statement
+- Function Expression
+- Function Declaration
+- Anonymous Function
+- Named Function Expression
+- Difference between params and args
+- First class functions
+- arrow functions
 
 ---
 

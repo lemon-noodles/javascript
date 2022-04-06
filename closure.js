@@ -45,3 +45,14 @@ function blah3() {
 }
 blah3();
 // a solution to print 1 2 3 4 5, but with var
+
+// both print 0
+function a() {
+  var x = 0;
+  return function b() {
+    console.log(x++);
+  };
+}
+
+var y = a()();
+var meh = a()();
