@@ -1,5 +1,15 @@
 #### React
 
+- React
+  - a widely used js library
+  - by fb
+  - component based approach, helps you build highly re-usable components
+- main features of React -
+  - Single directional data flow model
+  - Virtual DOM
+- JSX
+  - it is a kind of templating language but with the power of Javascript
+  - babel transpiles JSX to js objects that are rendered on the screen by js engine
 - 2 hooks used
   - useEffect, useState, useReducer, useContext, useRef
   - useMemo, useCallback
@@ -21,6 +31,8 @@
 - what comes to your mind if you're using map to render within js?
   - unique keys to elements that helps virtual dom to update the dom
 - what is virtual dom
+  - is a simple js object, that is a copy of the corresponding real DOM
+  - it's a node tree that has elements, attributes and properties
   - React keeps a copy of the DOM in memory, and updates it as necessary
 - what is state
   - we make a variable or data state when we expect it's change in value to trigger a re-render
@@ -39,6 +51,9 @@
 - Higher Order Components -
   - higher-order component is a function that takes a component and returns a new component
   - a component transforms props into UI, a higher-order component transforms a component into another component
+- Virtual DOM vs Real DOM
+  - Changes are expensive in real DOM, because a new DOM is created to update a change. Memory usage is more. Slow updates. Directly manipulate HTML.
+  - Changes are not expensive, since only the changed component is updated. Minimal memory usage. Fast updates. Cannot update HTML directly.
 
 ---
 
